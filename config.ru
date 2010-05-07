@@ -9,7 +9,7 @@ require 'lib/restricted'
 
 map "/restricted" do
   use AppEngine::Rack::LoginRequired
-  run HelloApp
+  run RestrictedApp
 end
 
 map "/" do
